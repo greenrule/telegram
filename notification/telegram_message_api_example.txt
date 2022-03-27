@@ -1,0 +1,11 @@
+OT_TOKEN 5158029175:AAH1DoBFOu6lStaFMBIIc7fu4S71sGSVUXg
+CHAT_ID -1001552351022
+
+// Command in many lines (\ as separator)
+curl -X POST \
+     -H 'Content-Type: application/json' \
+     -d '{"chat_id": "-1001552351022", "text": "This is a test from qa.guru"}' \
+     https://api.telegram.org/bot5158029175:AAH1DoBFOu6lStaFMBIIc7fu4S71sGSVUXg/sendMessage
+
+// Command in one line
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1001552351022", "text": "This is a test from qa.guru"}' https://api.telegram.org/bot5158029175:AAH1DoBFOu6lStaFMBIIc7fu4S71sGSVUXg/sendMessage
